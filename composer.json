@@ -1,8 +1,8 @@
 {
-    "name": "flashtalking/dag-task-scheduler",
+    "name": "dag-task-scheduler",
     "autoload": {
         "psr-4": {
-            "Flashtalking\\DagTaskScheduler\\": "src/Scheduler"
+            "DagTaskScheduler\\": "src/Scheduler"
         }
     },
     "scripts": {
