@@ -1,4 +1,4 @@
-<?php namespace Flashtalking\DagTaskScheduler\Storage;
+<?php namespace DagTaskScheduler\Storage;
 
 interface TaskStorageInterface {
     public function getProcesses($turboMode, $enabled);
