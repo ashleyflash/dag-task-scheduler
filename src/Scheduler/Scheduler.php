@@ -1,7 +1,7 @@
 <?php namespace Flashtalking\DagTaskScheduler;
 
-use Flashtalking\DagTaskScheduler\Storage\StatusStorageInterface;
-use Flashtalking\DagTaskScheduler\Storage\TaskStorageInterface;
+use DagTaskScheduler\Storage\StatusStorageInterface;
+use DagTaskScheduler\Storage\TaskStorageInterface;
 use League\Period\Period;
 use Psr\Log\LoggerAwareTrait;
 
