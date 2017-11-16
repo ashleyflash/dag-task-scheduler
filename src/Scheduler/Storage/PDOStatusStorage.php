@@ -1,6 +1,6 @@
-<?php namespace Flashtalking\DagTaskScheduler\Storage;
+<?php namespace DagTaskScheduler\Storage;
 
-use Flashtalking\DagTaskScheduler\PeriodHelper;
+use DagTaskScheduler\PeriodHelper;
 use League\Period\Period;
 
 class PDOStatusStorage implements StatusStorageInterface
