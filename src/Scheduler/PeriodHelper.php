@@ -1,4 +1,4 @@
-<?php namespace Flashtalking\DagTaskScheduler;
+<?php namespace DagTaskScheduler;
 
 use Doctrine\Instantiator\Exception\InvalidArgumentException;
 use League\Period\Period;
