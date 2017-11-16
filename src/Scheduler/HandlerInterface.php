@@ -1,4 +1,4 @@
-<?php namespace Flashtalking\DagTaskScheduler;
+<?php namespace DagTaskScheduler;
 
 interface HandlerInterface {
 
