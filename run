@@ -1,0 +1,22 @@
+#!/usr/bin/env php
+<?php
+
+$container = require __DIR__ . '/bootstrap.php';
+
+use Symfony\Component\Console\Application;
+
+$commands = array(
+    new \DagTaskScheduler\Command\Migration\Create(),
+    new \DagTaskScheduler\Command\Migration\Drop(),
+    new \DagTaskScheduler\Command\Migration\Run(),
+    new \DagTaskScheduler\Command\Migration\Seed()
+);
+
+$application = new Application('dag-task-scheduler');
+
+array_map(function(\DagTaskScheduler\Command\CommandAbstract $command) use($container, $application){
+    $command->setContainer($container);
+    $application->add($command);
+}, []);
+
+$application->run();

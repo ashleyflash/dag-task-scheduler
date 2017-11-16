@@ -1,0 +1,17 @@
+{
+    "name": "flashtalking/dag-task-scheduler",
+    "autoload": {
+        "psr-4": {
+            "Flashtalking\\DagTaskScheduler\\": "src/Scheduler"
+        }
+    },
+    "scripts": {
+        "test": "composer dump-autoload && tests/Integration/fixtures/run_fixtures.sh && vendor/bin/phpunit",
+        "coverage": "composer dump-autoload && tests/Integration/fixtures/run_fixtures.sh && /usr/bin/phpdbg -qrr vendor/bin/phpunit --coverage-html ./coverage"
+    },
+    "require": {
+        "phresque/phresque": "4.0.*",
+        "league/period": "^3.0",
+        "phpunit/phpunit": "5.2.*"
+    }
+}
